@@ -39,39 +39,31 @@ SCHEMA_PATH = "./schema_config.json"
 OUTPUT_DIR = "./"
 OUTPUT_PATH = os.path.join(OUTPUT_DIR, "custom_live_test.csv")
 
-# Dynamic text fragments to mutate email bodies so Stage 2 NLP never sees identical strings
-DYNAMIC_PREFIXES = [
-    "",
-    "[EXTERNAL] ",
-    "FWD: ",
-    "RE: Action Required - ",
-    "Automated Notification: ",
-    "Priority Alert // ",
-]
 
-DYNAMIC_SUFFIXES = [
-    "",
-    " Please do not reply to this automated message.",
-    " Ref ID: #{ref}.",
-    " Timestamp: {ts} UTC.",
-    " Contact helpdesk-ext-{ref}@portal-verify.net for assistance.",
-    " Failing to validate within {hrs} hours will result in temporary suspension.",
-]
+def mutate_corpus(cat_data: dict, chaos: float) -> str:
+    """
+    Synthesizes a unique email body by combining a category template with
+    a randomized sample of that category's top TF-IDF n-grams.
+    """
+    templates = cat_data.get("corpus_templates", [""])
+    ngrams = cat_data.get("top_ngrams", [])
 
+    # Pick 1 or 2 base templates and shuffle clauses
+    if len(templates) >= 2 and random.random() < 0.5:
+        chosen = random.sample(templates, 2)
+        base_text = f"{chosen[0]} {chosen[1]}"
+    else:
+        base_text = random.choice(templates)
 
-def mutate_corpus(base_template: str, chaos: float) -> str:
-    """Injects unpredictable jitter into the email text while preserving category keywords."""
-    text = base_template
-    if random.random() < min(0.85, 0.4 * chaos):
-        text = random.choice(DYNAMIC_PREFIXES) + text
-    if random.random() < min(0.85, 0.5 * chaos):
-        suffix = random.choice(DYNAMIC_SUFFIXES).format(
-            ref=uuid.uuid4().hex[:6].upper(),
-            ts=f"{random.randint(0,23):02d}:{random.randint(0,59):02d}:{random.randint(0,59):02d}",
-            hrs=random.choice([2, 6, 12, 24, 48]),
-        )
-        text = text + suffix
-    return text
+    # Inject 3 to 6 category-specific TF-IDF phrases so every row is unique
+    # while staying faithful to the class's learned linguistic signature
+    if ngrams:
+        k = min(len(ngrams), random.randint(3, max(4, int(5 * chaos))))
+        sampled_phrases = random.sample(ngrams, k)
+        jitter_sentence = f" Context indicators: {', '.join(sampled_phrases)}."
+        base_text = base_text + jitter_sentence
+
+    return base_text
 
 
 def sample_numeric_feature(col_stat: dict, chaos: float) -> float | int:
@@ -84,12 +76,10 @@ def sample_numeric_feature(col_stat: dict, chaos: float) -> float | int:
     if std == 0 or min_val == max_val:
         val = mean
     else:
-        # Scale standard deviation by chaos factor
         scaled_std = std * chaos
         gaussian_val = np.random.normal(loc=mean, scale=scaled_std)
 
-        # Blend a small chance of uniform distribution across [min, max] for unpredictable outliers
-        outlier_prob = min(0.35, 0.08 * chaos)
+        outlier_prob = min(0.25, 0.05 * chaos)
         if random.random() < outlier_prob:
             val = np.random.uniform(low=min_val, high=max_val)
         else:
@@ -108,20 +98,11 @@ def generate_synthetic_demo(
     schema_path: str = SCHEMA_PATH,
     output_path: str = OUTPUT_PATH,
 ) -> pd.DataFrame:
-    """
-    Generates a synthetic phishing/benign dataset from schema_config.json.
-
-    :param num_rows: Total number of synthetic email rows to generate.
-    :param mode: 'balanced' (cycles evenly through all categories) or 'random' (unpredictable mix).
-    :param chaos: Volatility multiplier (1.0 = normal historical spread, >1.5 = high variance/outliers).
-    :param seed: Optional integer seed for reproducible runs; None = completely unpredictable.
-    """
     if not os.path.exists(schema_path):
         raise FileNotFoundError(
             f"Missing '{schema_path}'. Run extract_schema_local.py first and commit schema_config.json."
         )
 
-    # Reseed with system entropy by default so every run is genuinely unpredictable
     if seed is not None:
         random.seed(seed)
         np.random.seed(seed)
@@ -137,13 +118,12 @@ def generate_synthetic_demo(
     categories = schema["categories"]
     cat_keys = list(categories.keys())
 
-    # Choose which category each row belongs to based on mode
     if mode == "balanced":
         selected_labels = [cat_keys[i % len(cat_keys)] for i in range(num_rows)]
-        random.shuffle(selected_labels)  # Shuffle row order so categories aren't predictable
+        random.shuffle(selected_labels)
     else:
-        # 'random' mode: sample categories with unpredictable random weights
-        weights = np.random.dirichlet(np.ones(len(cat_keys)))
+        # Keep a minimum representation per class even in random mode so metrics don't show 0 support
+        weights = np.random.dirichlet(np.ones(len(cat_keys)) * 2.0)
         selected_labels = np.random.choice(cat_keys, size=num_rows, p=weights).tolist()
 
     synthetic_rows = []
@@ -164,8 +144,7 @@ def generate_synthetic_demo(
             else:
                 row[col] = sample_numeric_feature(col_stat, chaos=chaos)
 
-        base_template = random.choice(cat_data["corpus_templates"])
-        row["Corpus"] = mutate_corpus(base_template, chaos=chaos)
+        row["Corpus"] = mutate_corpus(cat_data, chaos=chaos)
         synthetic_rows.append(row)
 
     ordered_cols = ["ID", "Dataset A Label", "Dataset B Label"] + feature_cols + ["Corpus"]

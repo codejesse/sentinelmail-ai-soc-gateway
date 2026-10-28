@@ -498,10 +498,37 @@
           "is_int": true
         }
       },
+      "top_ngrams": [
+        "free",
+        "download use",
+        "link redeem",
+        "purchase",
+        "exclusive",
+        "account select",
+        "select security",
+        "security review",
+        "receive",
+        "gift",
+        "detail participate",
+        "click link",
+        "enter",
+        "survey",
+        "survey win",
+        "spread",
+        "provide credit",
+        "take survey",
+        "participate",
+        "offer",
+        "iphone",
+        "reward",
+        "win",
+        "select",
+        "send free"
+      ],
       "corpus_templates": [
-        "URGENT: Automated security alert regarding Baiting verification check. Please confirm account details immediately.",
-        "Notice: Unusual sign-in activity detected matching Baiting signature. Review your credentials at the portal.",
-        "System update required: Your access token expires in 24 hours (Baiting simulation payload)."
+        "Congratulations! You have been selected for an exclusive offer and a free gift card. Participate in our survey to win your cash prize today.",
+        "We are sending you a free ticket to the exclusive concert and a one year free membership subscription. Download the attachment to claim your reward.",
+        "Exclusive club invitation: get a free preview and discount code on your next purchase when you participate to win a new iphone."
       ]
     },
     "Malware": {
@@ -946,10 +973,37 @@
           "is_int": true
         }
       },
+      "top_ngrams": [
+        "download free",
+        "link",
+        "attachment",
+        "document",
+        "continue",
+        "content",
+        "open attachment",
+        "open",
+        "view",
+        "file",
+        "attach",
+        "account disable",
+        "disable",
+        "bank account",
+        "application",
+        "instruction",
+        "network",
+        "file view",
+        "send",
+        "improve",
+        "photo",
+        "detail confirm",
+        "please open",
+        "open file",
+        "follow"
+      ],
       "corpus_templates": [
-        "URGENT: Automated security alert regarding Malware verification check. Please confirm account details immediately.",
-        "Notice: Unusual sign-in activity detected matching Malware signature. Review your credentials at the portal.",
-        "System update required: Your access token expires in 24 hours (Malware simulation payload)."
+        "Important: Please open the attached file and download the contract attachment to sign the new version of the document and continue.",
+        "We have sent your order confirmation receipt and invoice in the attachment. Please open the file attachment to view the details.",
+        "Warning: Your computer is infected with a trojan and ransomware keylogger. Download the attachment immediately to remove the spyware worm."
       ]
     },
     "NOT-Malicious General Class": {
@@ -959,10 +1013,10 @@
           "type": "categorical",
           "values": [
             "https://www.toshin.com",
-            "https://www.uuum.jp",
-            "https://www.mtbs3d.com",
-            "https://www.sor.ro",
-            "https://www.kmu.edu.tw"
+            "https://www.fares-foundation.org",
+            "https://www.sinn-und-form.de",
+            "https://www.doseofroses.com",
+            "https://www.suttoncricketclub.com"
           ]
         },
         "URLLength": {
@@ -977,10 +1031,10 @@
           "type": "categorical",
           "values": [
             "www.toshin.com",
-            "www.uuum.jp",
-            "www.mtbs3d.com",
-            "www.sor.ro",
-            "www.kmu.edu.tw"
+            "www.fares-foundation.org",
+            "www.sinn-und-form.de",
+            "www.doseofroses.com",
+            "www.suttoncricketclub.com"
           ]
         },
         "DomainLength": {
@@ -1394,10 +1448,37 @@
           "is_int": true
         }
       },
+      "top_ngrams": [
+        "greet",
+        "would",
+        "could",
+        "try",
+        "really",
+        "like",
+        "hug",
+        "look",
+        "house",
+        "dinner",
+        "thank",
+        "much",
+        "read",
+        "best",
+        "regard",
+        "plan",
+        "start",
+        "news",
+        "project",
+        "new",
+        "available",
+        "even",
+        "course",
+        "would like",
+        "best regard"
+      ],
       "corpus_templates": [
-        "URGENT: Automated security alert regarding NOT-Malicious General Class verification check. Please confirm account details immediately.",
-        "Notice: Unusual sign-in activity detected matching NOT-Malicious General Class signature. Review your credentials at the portal.",
-        "System update required: Your access token expires in 24 hours (NOT-Malicious General Class simulation payload)."
+        "Hi team, I would like to know if you are available for our appointment schedule next week to discuss the project and share your experience.",
+        "Thank you for your prompt response! Looking forward to our dinner at the new restaurant tomorrow morning after the contemporary art museum visit.",
+        "Just a quick reminder regarding our upcoming meeting and presentation. Please let me know your availability so we can confirm the schedule."
       ]
     },
     "Phishing": {
@@ -1407,10 +1488,10 @@
           "type": "categorical",
           "values": [
             "http://www.soeme.com",
-            "http://www.procareinsurance.gr",
-            "https://inezkelley-1317634057.cos.na-siliconvalley.myqcloud.com/inezkelley.html",
-            "http://www.securenab-aus.com",
-            "http://metawalletss.com/"
+            "https://metafb-4p2hl40.web.app/",
+            "https://confirm.address-match.workers.dev/",
+            "http://cc04196-wordpress-qm7qa.tw1.ru/wp-admin/fr/ca/w11s",
+            "https://jumptruegallery.000webhostapp.com/download-documents"
           ]
         },
         "URLLength": {
@@ -1425,10 +1506,10 @@
           "type": "categorical",
           "values": [
             "www.soeme.com",
-            "www.procareinsurance.gr",
-            "inezkelley-1317634057.cos.na-siliconvalley.myqcloud.com",
-            "www.securenab-aus.com",
-            "metawalletss.com"
+            "metafb-4p2hl40.web.app",
+            "confirm.address-match.workers.dev",
+            "cc04196-wordpress-qm7qa.tw1.ru",
+            "jumptruegallery.000webhostapp.com"
           ]
         },
         "DomainLength": {
@@ -1842,10 +1923,37 @@
           "is_int": true
         }
       },
+      "top_ngrams": [
+        "account",
+        "click",
+        "fund",
+        "contact",
+        "reset",
+        "delivery",
+        "student",
+        "click verify",
+        "account reset",
+        "account compromise",
+        "provide detail",
+        "package",
+        "collect",
+        "message click",
+        "email",
+        "collect prize",
+        "detail collect",
+        "amazon",
+        "transaction",
+        "personal",
+        "block",
+        "prize",
+        "right",
+        "help",
+        "confirm identity"
+      ],
       "corpus_templates": [
-        "URGENT: Automated security alert regarding Phishing verification check. Please confirm account details immediately.",
-        "Notice: Unusual sign-in activity detected matching Phishing signature. Review your credentials at the portal.",
-        "System update required: Your access token expires in 24 hours (Phishing simulation payload)."
+        "Your PayPal account has been suspended due to suspicious activity and unauthorized login attempts. Click the link below to verify your account and reset your password.",
+        "Security alert from customer support: We detected an unauthorized order on your Amazon and Google account. Please provide your login credentials to unlock access.",
+        "Urgent notice from your bank: Your credit card and online account access has been blocked due to fraudulent activity. Click here to confirm your identity."
       ]
     },
     "Pretexting": {
@@ -2290,10 +2398,37 @@
           "is_int": true
         }
       },
+      "top_ngrams": [
+        "need",
+        "represent",
+        "customer",
+        "verification",
+        "support",
+        "service",
+        "identity provide",
+        "customer service",
+        "password",
+        "need confirm",
+        "bill",
+        "bank need",
+        "share",
+        "verify",
+        "account detail",
+        "detail provide",
+        "need verify",
+        "security number",
+        "cash prize",
+        "provide social",
+        "social security",
+        "prize confirm",
+        "number",
+        "address password",
+        "need email"
+      ],
       "corpus_templates": [
-        "URGENT: Automated security alert regarding Pretexting verification check. Please confirm account details immediately.",
-        "Notice: Unusual sign-in activity detected matching Pretexting signature. Review your credentials at the portal.",
-        "System update required: Your access token expires in 24 hours (Pretexting simulation payload)."
+        "Dear friend, I am writing to seek your urgent and sincere assistance to transfer thirty million united states dollars left by my late father in a security company.",
+        "I am the personal attorney and colleague to the former president. We need a trustworthy foreign partner to stand as next of kin and beneficiary for this diplomatic baggage fund.",
+        "As a bank officer, I discovered an abandoned sum in our custody. With your honest cooperation and total confidentiality, we can repatriate this money into your private account."
       ]
     },
     "Scareware": {
@@ -2304,9 +2439,9 @@
           "values": [
             "http://shein.gifts",
             "https://www.nzjoy.com/",
-            "http://www.p30oopp.blogspot.com",
-            "http://www.caretodayuk.co.uk",
-            "http://www.naver.com-pass.online"
+            "https://accessible0-document-morroco-3jl58.ondigitalocean.app/",
+            "https://business-page-appeal-2334.web.app/",
+            "http://nilstiers.com"
           ]
         },
         "URLLength": {
@@ -2322,9 +2457,9 @@
           "values": [
             "shein.gifts",
             "www.nzjoy.com",
-            "www.p30oopp.blogspot.com",
-            "www.caretodayuk.co.uk",
-            "www.naver.com-pass.online"
+            "accessible0-document-morroco-3jl58.ondigitalocean.app",
+            "business-page-appeal-2334.web.app",
+            "nilstiers.com"
           ]
         },
         "DomainLength": {
@@ -2738,10 +2873,37 @@
           "is_int": true
         }
       },
+      "top_ngrams": [
+        "download attachment",
+        "computer",
+        "infect",
+        "security",
+        "account provide",
+        "credential security",
+        "matter",
+        "system",
+        "prevent",
+        "computer infect",
+        "listen",
+        "receive urgent",
+        "pay",
+        "download",
+        "protect",
+        "use send",
+        "attachment avoid",
+        "compromise please",
+        "please download",
+        "antivirus",
+        "download antivirus",
+        "data listen",
+        "provide data",
+        "send phishing",
+        "phishing"
+      ],
       "corpus_templates": [
-        "URGENT: Automated security alert regarding Scareware verification check. Please confirm account details immediately.",
-        "Notice: Unusual sign-in activity detected matching Scareware signature. Review your credentials at the portal.",
-        "System update required: Your access token expires in 24 hours (Scareware simulation payload)."
+        "CRITICAL ALERT: Your system is compromised and infected with a severe virus! Download our antivirus security software now for immediate removal and to avoid data loss.",
+        "Windows Technical Support detected a critical problem and identity risk on your computer. Call our support representative or share remote assistance to restore security.",
+        "Your social media and email account has been hacked and is spreading malware! Click to scan your system and protect your privacy before you lose all data."
       ]
     }
   }
