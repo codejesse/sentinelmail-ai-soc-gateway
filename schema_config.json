@@ -1,0 +1,2748 @@
+{
+  "feature_columns": [
+    "URL",
+    "URLLength",
+    "Domain",
+    "DomainLength",
+    "IsDomainIP",
+    "TLD",
+    "URLSimilarityIndex",
+    "CharContinuationRate",
+    "TLDLegitimateProb",
+    "URLCharProb",
+    "TLDLength",
+    "NoOfSubDomain",
+    "HasObfuscation",
+    "NoOfObfuscatedChar",
+    "ObfuscationRatio",
+    "NoOfLettersInURL",
+    "LetterRatioInURL",
+    "NoOfDegitsInURL",
+    "DegitRatioInURL",
+    "NoOfEqualsInURL",
+    "NoOfQMarkInURL",
+    "NoOfAmpersandInURL",
+    "NoOfOtherSpecialCharsInURL",
+    "SpacialCharRatioInURL",
+    "IsHTTPS",
+    "LineOfCode",
+    "LargestLineLength",
+    "HasTitle",
+    "Title",
+    "DomainTitleMatchScore",
+    "URLTitleMatchScore",
+    "HasFavicon",
+    "Robots",
+    "IsResponsive",
+    "NoOfURLRedirect",
+    "NoOfSelfRedirect",
+    "HasDescription",
+    "NoOfPopup",
+    "NoOfiFrame",
+    "HasExternalFormSubmit",
+    "HasSocialNet",
+    "HasSubmitButton",
+    "HasHiddenFields",
+    "HasPasswordField",
+    "Bank",
+    "Pay",
+    "Crypto",
+    "HasCopyrightInfo",
+    "NoOfImage",
+    "NoOfCSS",
+    "NoOfJS",
+    "NoOfSelfRef",
+    "NoOfEmptyRef",
+    "NoOfExternalRef"
+  ],
+  "categories": {
+    "Baiting": {
+      "dataset_a_label": "malicious",
+      "feature_stats": {
+        "URL": {
+          "type": "categorical",
+          "values": [
+            "https://entra-online-com.preview-domain.com/",
+            "http://bafybeig3xlhquzvdynnlfn6v7oau5zbfb4vrozsfr6wk6rz4csuahda3gq.ipfs.dweb.link/",
+            "http://www.gta6fuzhu.com",
+            "https://plain-flower-47ee.u84799i09929.workers.dev/",
+            "http://www.festadevagabundo.top"
+          ]
+        },
+        "URLLength": {
+          "type": "numeric",
+          "mean": 38.125,
+          "std": 17.423642940938997,
+          "min": 20.0,
+          "max": 82.0,
+          "is_int": true
+        },
+        "Domain": {
+          "type": "categorical",
+          "values": [
+            "entra-online-com.preview-domain.com",
+            "bafybeig3xlhquzvdynnlfn6v7oau5zbfb4vrozsfr6wk6rz4csuahda3gq.ipfs.dweb.link",
+            "www.gta6fuzhu.com",
+            "plain-flower-47ee.u84799i09929.workers.dev",
+            "www.festadevagabundo.top"
+          ]
+        },
+        "DomainLength": {
+          "type": "numeric",
+          "mean": 27.125,
+          "std": 14.78681845428556,
+          "min": 13.0,
+          "max": 74.0,
+          "is_int": true
+        },
+        "IsDomainIP": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "TLD": {
+          "type": "categorical",
+          "values": [
+            "com",
+            "top",
+            "app",
+            "link",
+            "dev"
+          ]
+        },
+        "URLSimilarityIndex": {
+          "type": "numeric",
+          "mean": 48.436784695375,
+          "std": 21.086874778492387,
+          "min": 9.664475286,
+          "max": 82.09366391,
+          "is_int": false
+        },
+        "CharContinuationRate": {
+          "type": "numeric",
+          "mean": 0.6796640374375,
+          "std": 0.25789639644207035,
+          "min": 0.231884058,
+          "max": 1.0,
+          "is_int": false
+        },
+        "TLDLegitimateProb": {
+          "type": "numeric",
+          "mean": 0.19938610624999997,
+          "std": 0.25897779534973125,
+          "min": 0.0001699,
+          "max": 0.5229071,
+          "is_int": false
+        },
+        "URLCharProb": {
+          "type": "numeric",
+          "mean": 0.0511972269375,
+          "std": 0.011755794129263876,
+          "min": 0.028977597,
+          "max": 0.066961255,
+          "is_int": false
+        },
+        "TLDLength": {
+          "type": "numeric",
+          "mean": 2.875,
+          "std": 0.5,
+          "min": 2.0,
+          "max": 4.0,
+          "is_int": true
+        },
+        "NoOfSubDomain": {
+          "type": "numeric",
+          "mean": 1.0,
+          "std": 0.5163977794943222,
+          "min": 0.0,
+          "max": 2.0,
+          "is_int": true
+        },
+        "HasObfuscation": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "NoOfObfuscatedChar": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "ObfuscationRatio": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "NoOfLettersInURL": {
+          "type": "numeric",
+          "mean": 24.3125,
+          "std": 14.513068823190588,
+          "min": 10.0,
+          "max": 62.0,
+          "is_int": true
+        },
+        "LetterRatioInURL": {
+          "type": "numeric",
+          "mean": 0.61175,
+          "std": 0.10433375931755423,
+          "min": 0.435,
+          "max": 0.756,
+          "is_int": false
+        },
+        "NoOfDegitsInURL": {
+          "type": "numeric",
+          "mean": 2.375,
+          "std": 3.8794329482541645,
+          "min": 0.0,
+          "max": 12.0,
+          "is_int": true
+        },
+        "DegitRatioInURL": {
+          "type": "numeric",
+          "mean": 0.04725,
+          "std": 0.07503732404610387,
+          "min": 0.0,
+          "max": 0.235,
+          "is_int": false
+        },
+        "NoOfEqualsInURL": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "NoOfQMarkInURL": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "NoOfAmpersandInURL": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "NoOfOtherSpecialCharsInURL": {
+          "type": "numeric",
+          "mean": 2.6875,
+          "std": 1.8154430129677255,
+          "min": 1.0,
+          "max": 6.0,
+          "is_int": true
+        },
+        "SpacialCharRatioInURL": {
+          "type": "numeric",
+          "mean": 0.06775,
+          "std": 0.03051447743831333,
+          "min": 0.026,
+          "max": 0.118,
+          "is_int": false
+        },
+        "IsHTTPS": {
+          "type": "numeric",
+          "mean": 0.5,
+          "std": 0.5163977794943222,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "LineOfCode": {
+          "type": "numeric",
+          "mean": 88.1875,
+          "std": 210.760280492633,
+          "min": 2.0,
+          "max": 859.0,
+          "is_int": true
+        },
+        "LargestLineLength": {
+          "type": "numeric",
+          "mean": 3393.3125,
+          "std": 6710.462753230957,
+          "min": 28.0,
+          "max": 25518.0,
+          "is_int": true
+        },
+        "HasTitle": {
+          "type": "numeric",
+          "mean": 0.5,
+          "std": 0.5163977794943222,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "Title": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "DomainTitleMatchScore": {
+          "type": "numeric",
+          "mean": 6.25,
+          "std": 25.0,
+          "min": 0.0,
+          "max": 100.0,
+          "is_int": true
+        },
+        "URLTitleMatchScore": {
+          "type": "numeric",
+          "mean": 6.25,
+          "std": 25.0,
+          "min": 0.0,
+          "max": 100.0,
+          "is_int": true
+        },
+        "HasFavicon": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "Robots": {
+          "type": "numeric",
+          "mean": 0.125,
+          "std": 0.3415650255319866,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "IsResponsive": {
+          "type": "numeric",
+          "mean": 0.4375,
+          "std": 0.51234753829798,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "NoOfURLRedirect": {
+          "type": "numeric",
+          "mean": 0.0625,
+          "std": 0.25,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "NoOfSelfRedirect": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "HasDescription": {
+          "type": "numeric",
+          "mean": 0.0625,
+          "std": 0.25,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "NoOfPopup": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "NoOfiFrame": {
+          "type": "numeric",
+          "mean": 0.125,
+          "std": 0.5,
+          "min": 0.0,
+          "max": 2.0,
+          "is_int": true
+        },
+        "HasExternalFormSubmit": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "HasSocialNet": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "HasSubmitButton": {
+          "type": "numeric",
+          "mean": 0.0625,
+          "std": 0.25,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "HasHiddenFields": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "HasPasswordField": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "Bank": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "Pay": {
+          "type": "numeric",
+          "mean": 0.0625,
+          "std": 0.25,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "Crypto": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "HasCopyrightInfo": {
+          "type": "numeric",
+          "mean": 0.0625,
+          "std": 0.25,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "NoOfImage": {
+          "type": "numeric",
+          "mean": 0.25,
+          "std": 1.0,
+          "min": 0.0,
+          "max": 4.0,
+          "is_int": true
+        },
+        "NoOfCSS": {
+          "type": "numeric",
+          "mean": 1.625,
+          "std": 4.731102760808872,
+          "min": 0.0,
+          "max": 19.0,
+          "is_int": true
+        },
+        "NoOfJS": {
+          "type": "numeric",
+          "mean": 0.375,
+          "std": 1.2583057392117916,
+          "min": 0.0,
+          "max": 5.0,
+          "is_int": true
+        },
+        "NoOfSelfRef": {
+          "type": "numeric",
+          "mean": 2.875,
+          "std": 9.694500159024875,
+          "min": 0.0,
+          "max": 39.0,
+          "is_int": true
+        },
+        "NoOfEmptyRef": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "NoOfExternalRef": {
+          "type": "numeric",
+          "mean": 1.9375,
+          "std": 3.9743972289308642,
+          "min": 0.0,
+          "max": 16.0,
+          "is_int": true
+        }
+      },
+      "corpus_templates": [
+        "URGENT: Automated security alert regarding Baiting verification check. Please confirm account details immediately.",
+        "Notice: Unusual sign-in activity detected matching Baiting signature. Review your credentials at the portal.",
+        "System update required: Your access token expires in 24 hours (Baiting simulation payload)."
+      ]
+    },
+    "Malware": {
+      "dataset_a_label": "malicious",
+      "feature_stats": {
+        "URL": {
+          "type": "categorical",
+          "values": [
+            "http://www.e.ms",
+            "https://maildinshaakckjnw634.web.app/",
+            "https://aol-109902.weeblysite.com/",
+            "https://robertshepard35.wixsite.com/my-site",
+            "https://aave-ethereum.info/#/"
+          ]
+        },
+        "URLLength": {
+          "type": "numeric",
+          "mean": 52.125,
+          "std": 65.1970091338552,
+          "min": 14.0,
+          "max": 287.0,
+          "is_int": true
+        },
+        "Domain": {
+          "type": "categorical",
+          "values": [
+            "mail.deliverylifesupport.com",
+            "www.e.ms",
+            "maildinshaakckjnw634.web.app",
+            "aol-109902.weeblysite.com",
+            "robertshepard35.wixsite.com"
+          ]
+        },
+        "DomainLength": {
+          "type": "numeric",
+          "mean": 24.3125,
+          "std": 11.914801718870525,
+          "min": 7.0,
+          "max": 52.0,
+          "is_int": true
+        },
+        "IsDomainIP": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "TLD": {
+          "type": "categorical",
+          "values": [
+            "com",
+            "app",
+            "ms",
+            "info",
+            "cf"
+          ]
+        },
+        "URLSimilarityIndex": {
+          "type": "numeric",
+          "mean": 51.4270872256875,
+          "std": 25.348973666544072,
+          "min": 5.471094111,
+          "max": 91.77350427,
+          "is_int": false
+        },
+        "CharContinuationRate": {
+          "type": "numeric",
+          "mean": 0.823597151125,
+          "std": 0.20421292876093355,
+          "min": 0.363636364,
+          "max": 1.0,
+          "is_int": false
+        },
+        "TLDLegitimateProb": {
+          "type": "numeric",
+          "mean": 0.2305675875,
+          "std": 0.26629197117560227,
+          "min": 6.38e-05,
+          "max": 0.5229071,
+          "is_int": false
+        },
+        "URLCharProb": {
+          "type": "numeric",
+          "mean": 0.050613263312500004,
+          "std": 0.010249216131620309,
+          "min": 0.037399452,
+          "max": 0.075631883,
+          "is_int": false
+        },
+        "TLDLength": {
+          "type": "numeric",
+          "mean": 2.8125,
+          "std": 0.5439056290693574,
+          "min": 2.0,
+          "max": 4.0,
+          "is_int": true
+        },
+        "NoOfSubDomain": {
+          "type": "numeric",
+          "mean": 1.1875,
+          "std": 1.1086778913041726,
+          "min": 0.0,
+          "max": 5.0,
+          "is_int": true
+        },
+        "HasObfuscation": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "NoOfObfuscatedChar": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "ObfuscationRatio": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "NoOfLettersInURL": {
+          "type": "numeric",
+          "mean": 32.9375,
+          "std": 47.04815795189719,
+          "min": 2.0,
+          "max": 199.0,
+          "is_int": true
+        },
+        "LetterRatioInURL": {
+          "type": "numeric",
+          "mean": 0.550375,
+          "std": 0.1565741038613985,
+          "min": 0.143,
+          "max": 0.776,
+          "is_int": false
+        },
+        "NoOfDegitsInURL": {
+          "type": "numeric",
+          "mean": 4.375,
+          "std": 6.88839603971781,
+          "min": 0.0,
+          "max": 27.0,
+          "is_int": true
+        },
+        "DegitRatioInURL": {
+          "type": "numeric",
+          "mean": 0.0640625,
+          "std": 0.07179551401956345,
+          "min": 0.0,
+          "max": 0.204,
+          "is_int": false
+        },
+        "NoOfEqualsInURL": {
+          "type": "numeric",
+          "mean": 0.3125,
+          "std": 1.25,
+          "min": 0.0,
+          "max": 5.0,
+          "is_int": true
+        },
+        "NoOfQMarkInURL": {
+          "type": "numeric",
+          "mean": 0.125,
+          "std": 0.5,
+          "min": 0.0,
+          "max": 2.0,
+          "is_int": true
+        },
+        "NoOfAmpersandInURL": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "NoOfOtherSpecialCharsInURL": {
+          "type": "numeric",
+          "mean": 5.3125,
+          "std": 10.163455777113084,
+          "min": 1.0,
+          "max": 43.0,
+          "is_int": true
+        },
+        "SpacialCharRatioInURL": {
+          "type": "numeric",
+          "mean": 0.0834375,
+          "std": 0.03886381135881211,
+          "min": 0.032,
+          "max": 0.174,
+          "is_int": false
+        },
+        "IsHTTPS": {
+          "type": "numeric",
+          "mean": 0.5625,
+          "std": 0.51234753829798,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "LineOfCode": {
+          "type": "numeric",
+          "mean": 83.0,
+          "std": 129.39088066784305,
+          "min": 2.0,
+          "max": 475.0,
+          "is_int": true
+        },
+        "LargestLineLength": {
+          "type": "numeric",
+          "mean": 3555.625,
+          "std": 6614.647855328354,
+          "min": 23.0,
+          "max": 19859.0,
+          "is_int": true
+        },
+        "HasTitle": {
+          "type": "numeric",
+          "mean": 0.6875,
+          "std": 0.47871355387816905,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "Title": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "DomainTitleMatchScore": {
+          "type": "numeric",
+          "mean": 12.5,
+          "std": 34.15650255319866,
+          "min": 0.0,
+          "max": 100.0,
+          "is_int": true
+        },
+        "URLTitleMatchScore": {
+          "type": "numeric",
+          "mean": 18.75,
+          "std": 40.311288741492746,
+          "min": 0.0,
+          "max": 100.0,
+          "is_int": true
+        },
+        "HasFavicon": {
+          "type": "numeric",
+          "mean": 0.1875,
+          "std": 0.4031128874149275,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "Robots": {
+          "type": "numeric",
+          "mean": 0.125,
+          "std": 0.3415650255319866,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "IsResponsive": {
+          "type": "numeric",
+          "mean": 0.375,
+          "std": 0.5,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "NoOfURLRedirect": {
+          "type": "numeric",
+          "mean": 0.3125,
+          "std": 0.47871355387816905,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "NoOfSelfRedirect": {
+          "type": "numeric",
+          "mean": 0.1875,
+          "std": 0.4031128874149275,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "HasDescription": {
+          "type": "numeric",
+          "mean": 0.0625,
+          "std": 0.25,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "NoOfPopup": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "NoOfiFrame": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "HasExternalFormSubmit": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "HasSocialNet": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "HasSubmitButton": {
+          "type": "numeric",
+          "mean": 0.0625,
+          "std": 0.25,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "HasHiddenFields": {
+          "type": "numeric",
+          "mean": 0.1875,
+          "std": 0.4031128874149275,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "HasPasswordField": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "Bank": {
+          "type": "numeric",
+          "mean": 0.125,
+          "std": 0.3415650255319866,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "Pay": {
+          "type": "numeric",
+          "mean": 0.125,
+          "std": 0.3415650255319866,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "Crypto": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "HasCopyrightInfo": {
+          "type": "numeric",
+          "mean": 0.0625,
+          "std": 0.25,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "NoOfImage": {
+          "type": "numeric",
+          "mean": 3.0,
+          "std": 6.723094525588644,
+          "min": 0.0,
+          "max": 19.0,
+          "is_int": true
+        },
+        "NoOfCSS": {
+          "type": "numeric",
+          "mean": 0.6875,
+          "std": 1.138346754435279,
+          "min": 0.0,
+          "max": 3.0,
+          "is_int": true
+        },
+        "NoOfJS": {
+          "type": "numeric",
+          "mean": 2.0,
+          "std": 3.5402448126271344,
+          "min": 0.0,
+          "max": 9.0,
+          "is_int": true
+        },
+        "NoOfSelfRef": {
+          "type": "numeric",
+          "mean": 0.4375,
+          "std": 0.8139410298049853,
+          "min": 0.0,
+          "max": 3.0,
+          "is_int": true
+        },
+        "NoOfEmptyRef": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "NoOfExternalRef": {
+          "type": "numeric",
+          "mean": 1.1875,
+          "std": 1.4705441169852742,
+          "min": 0.0,
+          "max": 4.0,
+          "is_int": true
+        }
+      },
+      "corpus_templates": [
+        "URGENT: Automated security alert regarding Malware verification check. Please confirm account details immediately.",
+        "Notice: Unusual sign-in activity detected matching Malware signature. Review your credentials at the portal.",
+        "System update required: Your access token expires in 24 hours (Malware simulation payload)."
+      ]
+    },
+    "NOT-Malicious General Class": {
+      "dataset_a_label": "benign",
+      "feature_stats": {
+        "URL": {
+          "type": "categorical",
+          "values": [
+            "https://www.toshin.com",
+            "https://www.uuum.jp",
+            "https://www.mtbs3d.com",
+            "https://www.sor.ro",
+            "https://www.kmu.edu.tw"
+          ]
+        },
+        "URLLength": {
+          "type": "numeric",
+          "mean": 24.735294117647058,
+          "std": 4.294526633027501,
+          "min": 17.0,
+          "max": 35.0,
+          "is_int": true
+        },
+        "Domain": {
+          "type": "categorical",
+          "values": [
+            "www.toshin.com",
+            "www.uuum.jp",
+            "www.mtbs3d.com",
+            "www.sor.ro",
+            "www.kmu.edu.tw"
+          ]
+        },
+        "DomainLength": {
+          "type": "numeric",
+          "mean": 17.735294117647058,
+          "std": 4.294526633027501,
+          "min": 10.0,
+          "max": 28.0,
+          "is_int": true
+        },
+        "IsDomainIP": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "TLD": {
+          "type": "categorical",
+          "values": [
+            "com",
+            "org",
+            "de",
+            "fr",
+            "jp"
+          ]
+        },
+        "URLSimilarityIndex": {
+          "type": "numeric",
+          "mean": 100.0,
+          "std": 0.0,
+          "min": 100.0,
+          "max": 100.0,
+          "is_int": true
+        },
+        "CharContinuationRate": {
+          "type": "numeric",
+          "mean": 0.8951956947941175,
+          "std": 0.18684671154566213,
+          "min": 0.384615385,
+          "max": 1.0,
+          "is_int": false
+        },
+        "TLDLegitimateProb": {
+          "type": "numeric",
+          "mean": 0.23146454411764705,
+          "std": 0.24850689385339622,
+          "min": 9.29e-05,
+          "max": 0.5229071,
+          "is_int": false
+        },
+        "URLCharProb": {
+          "type": "numeric",
+          "mean": 0.0581900245,
+          "std": 0.009582259288895015,
+          "min": 0.032598969,
+          "max": 0.071946402,
+          "is_int": false
+        },
+        "TLDLength": {
+          "type": "numeric",
+          "mean": 2.676470588235294,
+          "std": 0.7675458030077391,
+          "min": 2.0,
+          "max": 6.0,
+          "is_int": true
+        },
+        "NoOfSubDomain": {
+          "type": "numeric",
+          "mean": 1.0588235294117647,
+          "std": 0.23883257361061289,
+          "min": 1.0,
+          "max": 2.0,
+          "is_int": true
+        },
+        "HasObfuscation": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "NoOfObfuscatedChar": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "ObfuscationRatio": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "NoOfLettersInURL": {
+          "type": "numeric",
+          "mean": 11.441176470588236,
+          "std": 4.279558009396908,
+          "min": 4.0,
+          "max": 21.0,
+          "is_int": true
+        },
+        "LetterRatioInURL": {
+          "type": "numeric",
+          "mean": 0.44644117647058823,
+          "std": 0.09993518844472683,
+          "min": 0.235,
+          "max": 0.6,
+          "is_int": false
+        },
+        "NoOfDegitsInURL": {
+          "type": "numeric",
+          "mean": 0.029411764705882353,
+          "std": 0.17149858514250882,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "DegitRatioInURL": {
+          "type": "numeric",
+          "mean": 0.001411764705882353,
+          "std": 0.008231932086840423,
+          "min": 0.0,
+          "max": 0.048,
+          "is_int": false
+        },
+        "NoOfEqualsInURL": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "NoOfQMarkInURL": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "NoOfAmpersandInURL": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "NoOfOtherSpecialCharsInURL": {
+          "type": "numeric",
+          "mean": 1.2647058823529411,
+          "std": 0.511019392943506,
+          "min": 1.0,
+          "max": 3.0,
+          "is_int": true
+        },
+        "SpacialCharRatioInURL": {
+          "type": "numeric",
+          "mean": 0.05211764705882354,
+          "std": 0.021138453694604306,
+          "min": 0.031,
+          "max": 0.111,
+          "is_int": false
+        },
+        "IsHTTPS": {
+          "type": "numeric",
+          "mean": 1.0,
+          "std": 0.0,
+          "min": 1.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "LineOfCode": {
+          "type": "numeric",
+          "mean": 1457.0,
+          "std": 1916.0348892882137,
+          "min": 245.0,
+          "max": 10588.0,
+          "is_int": true
+        },
+        "LargestLineLength": {
+          "type": "numeric",
+          "mean": 7235.558823529412,
+          "std": 11912.06450109523,
+          "min": 146.0,
+          "max": 69512.0,
+          "is_int": true
+        },
+        "HasTitle": {
+          "type": "numeric",
+          "mean": 0.9705882352941176,
+          "std": 0.17149858514250882,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "Title": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "DomainTitleMatchScore": {
+          "type": "numeric",
+          "mean": 81.17647058823529,
+          "std": 38.576369251155114,
+          "min": 0.0,
+          "max": 100.0,
+          "is_int": false
+        },
+        "URLTitleMatchScore": {
+          "type": "numeric",
+          "mean": 81.17647058823529,
+          "std": 38.576369251155114,
+          "min": 0.0,
+          "max": 100.0,
+          "is_int": false
+        },
+        "HasFavicon": {
+          "type": "numeric",
+          "mean": 0.38235294117647056,
+          "std": 0.4932702180563817,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "Robots": {
+          "type": "numeric",
+          "mean": 0.5,
+          "std": 0.5075192189225523,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "IsResponsive": {
+          "type": "numeric",
+          "mean": 0.9117647058823529,
+          "std": 0.28790224128123654,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "NoOfURLRedirect": {
+          "type": "numeric",
+          "mean": 0.08823529411764706,
+          "std": 0.28790224128123654,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "NoOfSelfRedirect": {
+          "type": "numeric",
+          "mean": 0.029411764705882353,
+          "std": 0.17149858514250882,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "HasDescription": {
+          "type": "numeric",
+          "mean": 0.7058823529411765,
+          "std": 0.4624972900628803,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "NoOfPopup": {
+          "type": "numeric",
+          "mean": 0.11764705882352941,
+          "std": 0.40933840799980475,
+          "min": 0.0,
+          "max": 2.0,
+          "is_int": true
+        },
+        "NoOfiFrame": {
+          "type": "numeric",
+          "mean": 2.2058823529411766,
+          "std": 5.5583920269385185,
+          "min": 0.0,
+          "max": 32.0,
+          "is_int": true
+        },
+        "HasExternalFormSubmit": {
+          "type": "numeric",
+          "mean": 0.08823529411764706,
+          "std": 0.28790224128123654,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "HasSocialNet": {
+          "type": "numeric",
+          "mean": 0.7647058823529411,
+          "std": 0.4305615452020462,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "HasSubmitButton": {
+          "type": "numeric",
+          "mean": 0.5882352941176471,
+          "std": 0.49955416843564227,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "HasHiddenFields": {
+          "type": "numeric",
+          "mean": 0.5588235294117647,
+          "std": 0.5039947372613783,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "HasPasswordField": {
+          "type": "numeric",
+          "mean": 0.08823529411764706,
+          "std": 0.28790224128123654,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "Bank": {
+          "type": "numeric",
+          "mean": 0.17647058823529413,
+          "std": 0.3869529949759475,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "Pay": {
+          "type": "numeric",
+          "mean": 0.2647058823529412,
+          "std": 0.4478110755198991,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "Crypto": {
+          "type": "numeric",
+          "mean": 0.08823529411764706,
+          "std": 0.28790224128123654,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "HasCopyrightInfo": {
+          "type": "numeric",
+          "mean": 0.7647058823529411,
+          "std": 0.4305615452020462,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "NoOfImage": {
+          "type": "numeric",
+          "mean": 44.55882352941177,
+          "std": 66.61749300545279,
+          "min": 1.0,
+          "max": 344.0,
+          "is_int": true
+        },
+        "NoOfCSS": {
+          "type": "numeric",
+          "mean": 13.029411764705882,
+          "std": 13.431047916240274,
+          "min": 0.0,
+          "max": 67.0,
+          "is_int": true
+        },
+        "NoOfJS": {
+          "type": "numeric",
+          "mean": 21.735294117647058,
+          "std": 19.478517807355864,
+          "min": 1.0,
+          "max": 78.0,
+          "is_int": true
+        },
+        "NoOfSelfRef": {
+          "type": "numeric",
+          "mean": 96.41176470588235,
+          "std": 98.97233088919312,
+          "min": 0.0,
+          "max": 419.0,
+          "is_int": true
+        },
+        "NoOfEmptyRef": {
+          "type": "numeric",
+          "mean": 11.852941176470589,
+          "std": 41.81788246812178,
+          "min": 0.0,
+          "max": 241.0,
+          "is_int": true
+        },
+        "NoOfExternalRef": {
+          "type": "numeric",
+          "mean": 92.58823529411765,
+          "std": 100.83022564118384,
+          "min": 9.0,
+          "max": 475.0,
+          "is_int": true
+        }
+      },
+      "corpus_templates": [
+        "URGENT: Automated security alert regarding NOT-Malicious General Class verification check. Please confirm account details immediately.",
+        "Notice: Unusual sign-in activity detected matching NOT-Malicious General Class signature. Review your credentials at the portal.",
+        "System update required: Your access token expires in 24 hours (NOT-Malicious General Class simulation payload)."
+      ]
+    },
+    "Phishing": {
+      "dataset_a_label": "malicious",
+      "feature_stats": {
+        "URL": {
+          "type": "categorical",
+          "values": [
+            "http://www.soeme.com",
+            "http://www.procareinsurance.gr",
+            "https://inezkelley-1317634057.cos.na-siliconvalley.myqcloud.com/inezkelley.html",
+            "http://www.securenab-aus.com",
+            "http://metawalletss.com/"
+          ]
+        },
+        "URLLength": {
+          "type": "numeric",
+          "mean": 69.04347826086956,
+          "std": 131.0275745652139,
+          "min": 19.0,
+          "max": 663.0,
+          "is_int": true
+        },
+        "Domain": {
+          "type": "categorical",
+          "values": [
+            "www.soeme.com",
+            "www.procareinsurance.gr",
+            "inezkelley-1317634057.cos.na-siliconvalley.myqcloud.com",
+            "www.securenab-aus.com",
+            "metawalletss.com"
+          ]
+        },
+        "DomainLength": {
+          "type": "numeric",
+          "mean": 27.304347826086957,
+          "std": 15.537154245721318,
+          "min": 7.0,
+          "max": 74.0,
+          "is_int": true
+        },
+        "IsDomainIP": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "TLD": {
+          "type": "categorical",
+          "values": [
+            "com",
+            "top",
+            "co",
+            "app",
+            "gr"
+          ]
+        },
+        "URLSimilarityIndex": {
+          "type": "numeric",
+          "mean": 47.36346307473914,
+          "std": 26.142327173678733,
+          "min": 2.15699251,
+          "max": 83.0449827,
+          "is_int": false
+        },
+        "CharContinuationRate": {
+          "type": "numeric",
+          "mean": 0.7230522266086957,
+          "std": 0.25555706655646593,
+          "min": 0.260869565,
+          "max": 1.0,
+          "is_int": false
+        },
+        "TLDLegitimateProb": {
+          "type": "numeric",
+          "mean": 0.20836150000000003,
+          "std": 0.25794410590183536,
+          "min": 0.0002752,
+          "max": 0.5229071,
+          "is_int": false
+        },
+        "URLCharProb": {
+          "type": "numeric",
+          "mean": 0.051204214217391304,
+          "std": 0.01262652990887117,
+          "min": 0.031763055,
+          "max": 0.082002449,
+          "is_int": false
+        },
+        "TLDLength": {
+          "type": "numeric",
+          "mean": 2.6956521739130435,
+          "std": 0.5587959953568722,
+          "min": 2.0,
+          "max": 4.0,
+          "is_int": true
+        },
+        "NoOfSubDomain": {
+          "type": "numeric",
+          "mean": 1.2173913043478262,
+          "std": 0.671262158456362,
+          "min": 0.0,
+          "max": 3.0,
+          "is_int": true
+        },
+        "HasObfuscation": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "NoOfObfuscatedChar": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "ObfuscationRatio": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "NoOfLettersInURL": {
+          "type": "numeric",
+          "mean": 48.04347826086956,
+          "std": 103.50734636241111,
+          "min": 7.0,
+          "max": 516.0,
+          "is_int": true
+        },
+        "LetterRatioInURL": {
+          "type": "numeric",
+          "mean": 0.5997391304347827,
+          "std": 0.13316913967900312,
+          "min": 0.368,
+          "max": 0.824,
+          "is_int": false
+        },
+        "NoOfDegitsInURL": {
+          "type": "numeric",
+          "mean": 7.6521739130434785,
+          "std": 23.68852559910153,
+          "min": 0.0,
+          "max": 115.0,
+          "is_int": true
+        },
+        "DegitRatioInURL": {
+          "type": "numeric",
+          "mean": 0.0626086956521739,
+          "std": 0.07788379404917348,
+          "min": 0.0,
+          "max": 0.25,
+          "is_int": false
+        },
+        "NoOfEqualsInURL": {
+          "type": "numeric",
+          "mean": 0.08695652173913043,
+          "std": 0.28810406552003043,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "NoOfQMarkInURL": {
+          "type": "numeric",
+          "mean": 0.08695652173913043,
+          "std": 0.28810406552003043,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "NoOfAmpersandInURL": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "NoOfOtherSpecialCharsInURL": {
+          "type": "numeric",
+          "mean": 4.043478260869565,
+          "std": 3.7595727618678496,
+          "min": 1.0,
+          "max": 18.0,
+          "is_int": true
+        },
+        "SpacialCharRatioInURL": {
+          "type": "numeric",
+          "mean": 0.07834782608695652,
+          "std": 0.03396871380824657,
+          "min": 0.03,
+          "max": 0.158,
+          "is_int": false
+        },
+        "IsHTTPS": {
+          "type": "numeric",
+          "mean": 0.5652173913043478,
+          "std": 0.5068698018697019,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "LineOfCode": {
+          "type": "numeric",
+          "mean": 105.78260869565217,
+          "std": 222.43077708106262,
+          "min": 2.0,
+          "max": 885.0,
+          "is_int": true
+        },
+        "LargestLineLength": {
+          "type": "numeric",
+          "mean": 43725.565217391304,
+          "std": 108024.32348227121,
+          "min": 29.0,
+          "max": 372434.0,
+          "is_int": true
+        },
+        "HasTitle": {
+          "type": "numeric",
+          "mean": 0.6521739130434783,
+          "std": 0.48698475355767396,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "Title": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "DomainTitleMatchScore": {
+          "type": "numeric",
+          "mean": 17.665591756565217,
+          "std": 38.638808933910575,
+          "min": 0.0,
+          "max": 100.0,
+          "is_int": false
+        },
+        "URLTitleMatchScore": {
+          "type": "numeric",
+          "mean": 21.994042504434784,
+          "std": 42.047174505114356,
+          "min": 0.0,
+          "max": 100.0,
+          "is_int": false
+        },
+        "HasFavicon": {
+          "type": "numeric",
+          "mean": 0.043478260869565216,
+          "std": 0.20851441405707477,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "Robots": {
+          "type": "numeric",
+          "mean": 0.08695652173913043,
+          "std": 0.2881040655200304,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "IsResponsive": {
+          "type": "numeric",
+          "mean": 0.13043478260869565,
+          "std": 0.34435022157509093,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "NoOfURLRedirect": {
+          "type": "numeric",
+          "mean": 0.17391304347826086,
+          "std": 0.3875533878815898,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "NoOfSelfRedirect": {
+          "type": "numeric",
+          "mean": 0.043478260869565216,
+          "std": 0.2085144140570748,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "HasDescription": {
+          "type": "numeric",
+          "mean": 0.08695652173913043,
+          "std": 0.28810406552003043,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "NoOfPopup": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "NoOfiFrame": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "HasExternalFormSubmit": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "HasSocialNet": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "HasSubmitButton": {
+          "type": "numeric",
+          "mean": 0.08695652173913043,
+          "std": 0.28810406552003043,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "HasHiddenFields": {
+          "type": "numeric",
+          "mean": 0.043478260869565216,
+          "std": 0.2085144140570748,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "HasPasswordField": {
+          "type": "numeric",
+          "mean": 0.043478260869565216,
+          "std": 0.2085144140570748,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "Bank": {
+          "type": "numeric",
+          "mean": 0.13043478260869565,
+          "std": 0.34435022157509093,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "Pay": {
+          "type": "numeric",
+          "mean": 0.13043478260869565,
+          "std": 0.34435022157509093,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "Crypto": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "HasCopyrightInfo": {
+          "type": "numeric",
+          "mean": 0.08695652173913043,
+          "std": 0.28810406552003043,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "NoOfImage": {
+          "type": "numeric",
+          "mean": 0.34782608695652173,
+          "std": 0.7751067757631795,
+          "min": 0.0,
+          "max": 3.0,
+          "is_int": true
+        },
+        "NoOfCSS": {
+          "type": "numeric",
+          "mean": 0.6521739130434783,
+          "std": 2.308259786312346,
+          "min": 0.0,
+          "max": 11.0,
+          "is_int": true
+        },
+        "NoOfJS": {
+          "type": "numeric",
+          "mean": 1.2608695652173914,
+          "std": 2.2606795298668256,
+          "min": 0.0,
+          "max": 8.0,
+          "is_int": true
+        },
+        "NoOfSelfRef": {
+          "type": "numeric",
+          "mean": 0.34782608695652173,
+          "std": 0.7140598174697278,
+          "min": 0.0,
+          "max": 3.0,
+          "is_int": true
+        },
+        "NoOfEmptyRef": {
+          "type": "numeric",
+          "mean": 0.13043478260869565,
+          "std": 0.45769658728016016,
+          "min": 0.0,
+          "max": 2.0,
+          "is_int": true
+        },
+        "NoOfExternalRef": {
+          "type": "numeric",
+          "mean": 1.173913043478261,
+          "std": 1.9691293395130816,
+          "min": 0.0,
+          "max": 8.0,
+          "is_int": true
+        }
+      },
+      "corpus_templates": [
+        "URGENT: Automated security alert regarding Phishing verification check. Please confirm account details immediately.",
+        "Notice: Unusual sign-in activity detected matching Phishing signature. Review your credentials at the portal.",
+        "System update required: Your access token expires in 24 hours (Phishing simulation payload)."
+      ]
+    },
+    "Pretexting": {
+      "dataset_a_label": "malicious",
+      "feature_stats": {
+        "URL": {
+          "type": "categorical",
+          "values": [
+            "https://dhl-international.peakoutsourcing.host/express-983720289523040/mx837492/login/index.php",
+            "https://ipfs.best-practice.se/ipfs/bafybeig52bssadmmakzsrzm7rcd35bmb6gygf424di5lmo4ayowyq67y64/link.html",
+            "https://maildinshaakckjnw49.firebaseapp.com/",
+            "http://www.doctorcarmax.com",
+            "http://www.netwow.com.br"
+          ]
+        },
+        "URLLength": {
+          "type": "numeric",
+          "mean": 84.25,
+          "std": 119.99527768486003,
+          "min": 17.0,
+          "max": 495.0,
+          "is_int": true
+        },
+        "Domain": {
+          "type": "categorical",
+          "values": [
+            "dhl-international.peakoutsourcing.host",
+            "ipfs.best-practice.se",
+            "maildinshaakckjnw49.firebaseapp.com",
+            "www.doctorcarmax.com",
+            "www.netwow.com.br"
+          ]
+        },
+        "DomainLength": {
+          "type": "numeric",
+          "mean": 29.3125,
+          "std": 16.43459258190885,
+          "min": 10.0,
+          "max": 73.0,
+          "is_int": true
+        },
+        "IsDomainIP": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "TLD": {
+          "type": "categorical",
+          "values": [
+            "com",
+            "host",
+            "se",
+            "br",
+            "cc"
+          ]
+        },
+        "URLSimilarityIndex": {
+          "type": "numeric",
+          "mean": 46.109176539687496,
+          "std": 29.78403177723692,
+          "min": 2.702248964,
+          "max": 87.5,
+          "is_int": false
+        },
+        "CharContinuationRate": {
+          "type": "numeric",
+          "mean": 0.678404821125,
+          "std": 0.28575250540118796,
+          "min": 0.25,
+          "max": 1.0,
+          "is_int": false
+        },
+        "TLDLegitimateProb": {
+          "type": "numeric",
+          "mean": 0.2025100875,
+          "std": 0.257029733109799,
+          "min": 4.47e-05,
+          "max": 0.5229071,
+          "is_int": false
+        },
+        "URLCharProb": {
+          "type": "numeric",
+          "mean": 0.050299123125,
+          "std": 0.011899968826785585,
+          "min": 0.028044918,
+          "max": 0.068346125,
+          "is_int": false
+        },
+        "TLDLength": {
+          "type": "numeric",
+          "mean": 2.8125,
+          "std": 0.6551081335677849,
+          "min": 2.0,
+          "max": 4.0,
+          "is_int": true
+        },
+        "NoOfSubDomain": {
+          "type": "numeric",
+          "mean": 1.3125,
+          "std": 0.6020797289396148,
+          "min": 1.0,
+          "max": 3.0,
+          "is_int": true
+        },
+        "HasObfuscation": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "NoOfObfuscatedChar": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "ObfuscationRatio": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "NoOfLettersInURL": {
+          "type": "numeric",
+          "mean": 60.8125,
+          "std": 105.32250076154983,
+          "min": 5.0,
+          "max": 432.0,
+          "is_int": true
+        },
+        "LetterRatioInURL": {
+          "type": "numeric",
+          "mean": 0.5989374999999999,
+          "std": 0.1563336042996941,
+          "min": 0.294,
+          "max": 0.873,
+          "is_int": false
+        },
+        "NoOfDegitsInURL": {
+          "type": "numeric",
+          "mean": 6.9375,
+          "std": 9.664151971763136,
+          "min": 0.0,
+          "max": 22.0,
+          "is_int": true
+        },
+        "DegitRatioInURL": {
+          "type": "numeric",
+          "mean": 0.0641875,
+          "std": 0.10917216907252507,
+          "min": 0.0,
+          "max": 0.393,
+          "is_int": false
+        },
+        "NoOfEqualsInURL": {
+          "type": "numeric",
+          "mean": 0.875,
+          "std": 2.5,
+          "min": 0.0,
+          "max": 9.0,
+          "is_int": true
+        },
+        "NoOfQMarkInURL": {
+          "type": "numeric",
+          "mean": 0.1875,
+          "std": 0.5439056290693574,
+          "min": 0.0,
+          "max": 2.0,
+          "is_int": true
+        },
+        "NoOfAmpersandInURL": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "NoOfOtherSpecialCharsInURL": {
+          "type": "numeric",
+          "mean": 5.6875,
+          "std": 6.569817349059257,
+          "min": 1.0,
+          "max": 23.0,
+          "is_int": true
+        },
+        "SpacialCharRatioInURL": {
+          "type": "numeric",
+          "mean": 0.07593749999999999,
+          "std": 0.03698552644841853,
+          "min": 0.031,
+          "max": 0.144,
+          "is_int": false
+        },
+        "IsHTTPS": {
+          "type": "numeric",
+          "mean": 0.5,
+          "std": 0.5163977794943222,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "LineOfCode": {
+          "type": "numeric",
+          "mean": 119.5,
+          "std": 144.69185648588982,
+          "min": 2.0,
+          "max": 474.0,
+          "is_int": true
+        },
+        "LargestLineLength": {
+          "type": "numeric",
+          "mean": 54289.75,
+          "std": 181742.0562454748,
+          "min": 34.0,
+          "max": 726621.0,
+          "is_int": true
+        },
+        "HasTitle": {
+          "type": "numeric",
+          "mean": 0.6875,
+          "std": 0.47871355387816905,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "Title": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "DomainTitleMatchScore": {
+          "type": "numeric",
+          "mean": 6.25,
+          "std": 25.0,
+          "min": 0.0,
+          "max": 100.0,
+          "is_int": true
+        },
+        "URLTitleMatchScore": {
+          "type": "numeric",
+          "mean": 12.5,
+          "std": 34.15650255319866,
+          "min": 0.0,
+          "max": 100.0,
+          "is_int": true
+        },
+        "HasFavicon": {
+          "type": "numeric",
+          "mean": 0.125,
+          "std": 0.3415650255319866,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "Robots": {
+          "type": "numeric",
+          "mean": 0.125,
+          "std": 0.3415650255319866,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "IsResponsive": {
+          "type": "numeric",
+          "mean": 0.4375,
+          "std": 0.51234753829798,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "NoOfURLRedirect": {
+          "type": "numeric",
+          "mean": 0.0625,
+          "std": 0.25,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "NoOfSelfRedirect": {
+          "type": "numeric",
+          "mean": 0.0625,
+          "std": 0.25,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "HasDescription": {
+          "type": "numeric",
+          "mean": 0.0625,
+          "std": 0.25,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "NoOfPopup": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "NoOfiFrame": {
+          "type": "numeric",
+          "mean": 0.1875,
+          "std": 0.75,
+          "min": 0.0,
+          "max": 3.0,
+          "is_int": true
+        },
+        "HasExternalFormSubmit": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "HasSocialNet": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "HasSubmitButton": {
+          "type": "numeric",
+          "mean": 0.125,
+          "std": 0.3415650255319866,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "HasHiddenFields": {
+          "type": "numeric",
+          "mean": 0.125,
+          "std": 0.3415650255319866,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "HasPasswordField": {
+          "type": "numeric",
+          "mean": 0.0625,
+          "std": 0.25,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "Bank": {
+          "type": "numeric",
+          "mean": 0.125,
+          "std": 0.3415650255319866,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "Pay": {
+          "type": "numeric",
+          "mean": 0.1875,
+          "std": 0.4031128874149275,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "Crypto": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "HasCopyrightInfo": {
+          "type": "numeric",
+          "mean": 0.1875,
+          "std": 0.4031128874149275,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "NoOfImage": {
+          "type": "numeric",
+          "mean": 1.75,
+          "std": 4.10690475500305,
+          "min": 0.0,
+          "max": 14.0,
+          "is_int": true
+        },
+        "NoOfCSS": {
+          "type": "numeric",
+          "mean": 0.625,
+          "std": 1.1474609652039003,
+          "min": 0.0,
+          "max": 4.0,
+          "is_int": true
+        },
+        "NoOfJS": {
+          "type": "numeric",
+          "mean": 0.6875,
+          "std": 1.40089257261219,
+          "min": 0.0,
+          "max": 5.0,
+          "is_int": true
+        },
+        "NoOfSelfRef": {
+          "type": "numeric",
+          "mean": 0.25,
+          "std": 0.6831300510639732,
+          "min": 0.0,
+          "max": 2.0,
+          "is_int": true
+        },
+        "NoOfEmptyRef": {
+          "type": "numeric",
+          "mean": 0.0625,
+          "std": 0.25,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "NoOfExternalRef": {
+          "type": "numeric",
+          "mean": 1.1875,
+          "std": 2.1360009363293826,
+          "min": 0.0,
+          "max": 8.0,
+          "is_int": true
+        }
+      },
+      "corpus_templates": [
+        "URGENT: Automated security alert regarding Pretexting verification check. Please confirm account details immediately.",
+        "Notice: Unusual sign-in activity detected matching Pretexting signature. Review your credentials at the portal.",
+        "System update required: Your access token expires in 24 hours (Pretexting simulation payload)."
+      ]
+    },
+    "Scareware": {
+      "dataset_a_label": "malicious",
+      "feature_stats": {
+        "URL": {
+          "type": "categorical",
+          "values": [
+            "http://shein.gifts",
+            "https://www.nzjoy.com/",
+            "http://www.p30oopp.blogspot.com",
+            "http://www.caretodayuk.co.uk",
+            "http://www.naver.com-pass.online"
+          ]
+        },
+        "URLLength": {
+          "type": "numeric",
+          "mean": 35.4,
+          "std": 21.004761364985796,
+          "min": 17.0,
+          "max": 107.0,
+          "is_int": true
+        },
+        "Domain": {
+          "type": "categorical",
+          "values": [
+            "shein.gifts",
+            "www.nzjoy.com",
+            "www.p30oopp.blogspot.com",
+            "www.caretodayuk.co.uk",
+            "www.naver.com-pass.online"
+          ]
+        },
+        "DomainLength": {
+          "type": "numeric",
+          "mean": 24.8,
+          "std": 12.107413996564688,
+          "min": 10.0,
+          "max": 53.0,
+          "is_int": true
+        },
+        "IsDomainIP": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "TLD": {
+          "type": "categorical",
+          "values": [
+            "com",
+            "app",
+            "gifts",
+            "uk",
+            "online"
+          ]
+        },
+        "URLSimilarityIndex": {
+          "type": "numeric",
+          "mean": 58.660000042499995,
+          "std": 19.879590937585228,
+          "min": 14.20475248,
+          "max": 91.27272727,
+          "is_int": false
+        },
+        "CharContinuationRate": {
+          "type": "numeric",
+          "mean": 0.76790028635,
+          "std": 0.26590774980209825,
+          "min": 0.272727273,
+          "max": 1.0,
+          "is_int": false
+        },
+        "TLDLegitimateProb": {
+          "type": "numeric",
+          "mean": 0.23939104500000002,
+          "std": 0.2632867482177329,
+          "min": 3.4e-06,
+          "max": 0.5229071,
+          "is_int": false
+        },
+        "URLCharProb": {
+          "type": "numeric",
+          "mean": 0.05530232855,
+          "std": 0.011121495502019952,
+          "min": 0.022555297,
+          "max": 0.069124445,
+          "is_int": false
+        },
+        "TLDLength": {
+          "type": "numeric",
+          "mean": 3.0,
+          "std": 0.9733285267845752,
+          "min": 2.0,
+          "max": 6.0,
+          "is_int": true
+        },
+        "NoOfSubDomain": {
+          "type": "numeric",
+          "mean": 1.15,
+          "std": 0.8127277008872491,
+          "min": 0.0,
+          "max": 3.0,
+          "is_int": true
+        },
+        "HasObfuscation": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "NoOfObfuscatedChar": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "ObfuscationRatio": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "NoOfLettersInURL": {
+          "type": "numeric",
+          "mean": 20.35,
+          "std": 15.865470616869102,
+          "min": 8.0,
+          "max": 74.0,
+          "is_int": true
+        },
+        "LetterRatioInURL": {
+          "type": "numeric",
+          "mean": 0.54855,
+          "std": 0.11420686448168008,
+          "min": 0.309,
+          "max": 0.82,
+          "is_int": false
+        },
+        "NoOfDegitsInURL": {
+          "type": "numeric",
+          "mean": 2.65,
+          "std": 5.878372492271542,
+          "min": 0.0,
+          "max": 23.0,
+          "is_int": true
+        },
+        "DegitRatioInURL": {
+          "type": "numeric",
+          "mean": 0.04594999999999999,
+          "std": 0.0994312642773362,
+          "min": 0.0,
+          "max": 0.418,
+          "is_int": false
+        },
+        "NoOfEqualsInURL": {
+          "type": "numeric",
+          "mean": 0.1,
+          "std": 0.44721359549995787,
+          "min": 0.0,
+          "max": 2.0,
+          "is_int": true
+        },
+        "NoOfQMarkInURL": {
+          "type": "numeric",
+          "mean": 0.05,
+          "std": 0.22360679774997894,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "NoOfAmpersandInURL": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "NoOfOtherSpecialCharsInURL": {
+          "type": "numeric",
+          "mean": 2.9,
+          "std": 2.425739171122029,
+          "min": 1.0,
+          "max": 8.0,
+          "is_int": true
+        },
+        "SpacialCharRatioInURL": {
+          "type": "numeric",
+          "mean": 0.078,
+          "std": 0.03946084001560081,
+          "min": 0.03,
+          "max": 0.167,
+          "is_int": false
+        },
+        "IsHTTPS": {
+          "type": "numeric",
+          "mean": 0.35,
+          "std": 0.4893604849295929,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "LineOfCode": {
+          "type": "numeric",
+          "mean": 48.7,
+          "std": 85.4000493035726,
+          "min": 2.0,
+          "max": 342.0,
+          "is_int": true
+        },
+        "LargestLineLength": {
+          "type": "numeric",
+          "mean": 5911.3,
+          "std": 22927.550972344903,
+          "min": 28.0,
+          "max": 103006.0,
+          "is_int": true
+        },
+        "HasTitle": {
+          "type": "numeric",
+          "mean": 0.7,
+          "std": 0.4701623459816272,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "Title": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "DomainTitleMatchScore": {
+          "type": "numeric",
+          "mean": 20.0,
+          "std": 41.03913408340616,
+          "min": 0.0,
+          "max": 100.0,
+          "is_int": true
+        },
+        "URLTitleMatchScore": {
+          "type": "numeric",
+          "mean": 20.0,
+          "std": 41.03913408340616,
+          "min": 0.0,
+          "max": 100.0,
+          "is_int": true
+        },
+        "HasFavicon": {
+          "type": "numeric",
+          "mean": 0.1,
+          "std": 0.30779350562554625,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "Robots": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "IsResponsive": {
+          "type": "numeric",
+          "mean": 0.35,
+          "std": 0.4893604849295929,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "NoOfURLRedirect": {
+          "type": "numeric",
+          "mean": 0.2,
+          "std": 0.4103913408340617,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "NoOfSelfRedirect": {
+          "type": "numeric",
+          "mean": 0.1,
+          "std": 0.30779350562554625,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "HasDescription": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "NoOfPopup": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "NoOfiFrame": {
+          "type": "numeric",
+          "mean": 0.25,
+          "std": 1.118033988749895,
+          "min": 0.0,
+          "max": 5.0,
+          "is_int": true
+        },
+        "HasExternalFormSubmit": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "HasSocialNet": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "HasSubmitButton": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "HasHiddenFields": {
+          "type": "numeric",
+          "mean": 0.05,
+          "std": 0.22360679774997894,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "HasPasswordField": {
+          "type": "numeric",
+          "mean": 0.1,
+          "std": 0.30779350562554625,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "Bank": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "Pay": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "Crypto": {
+          "type": "numeric",
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "is_int": true
+        },
+        "HasCopyrightInfo": {
+          "type": "numeric",
+          "mean": 0.1,
+          "std": 0.30779350562554625,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "NoOfImage": {
+          "type": "numeric",
+          "mean": 0.1,
+          "std": 0.44721359549995787,
+          "min": 0.0,
+          "max": 2.0,
+          "is_int": true
+        },
+        "NoOfCSS": {
+          "type": "numeric",
+          "mean": 0.3,
+          "std": 0.6569466853317862,
+          "min": 0.0,
+          "max": 2.0,
+          "is_int": true
+        },
+        "NoOfJS": {
+          "type": "numeric",
+          "mean": 0.5,
+          "std": 1.2354415362426845,
+          "min": 0.0,
+          "max": 4.0,
+          "is_int": true
+        },
+        "NoOfSelfRef": {
+          "type": "numeric",
+          "mean": 0.2,
+          "std": 0.4103913408340617,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "NoOfEmptyRef": {
+          "type": "numeric",
+          "mean": 0.05,
+          "std": 0.22360679774997894,
+          "min": 0.0,
+          "max": 1.0,
+          "is_int": true
+        },
+        "NoOfExternalRef": {
+          "type": "numeric",
+          "mean": 1.05,
+          "std": 1.4317821063276353,
+          "min": 0.0,
+          "max": 6.0,
+          "is_int": true
+        }
+      },
+      "corpus_templates": [
+        "URGENT: Automated security alert regarding Scareware verification check. Please confirm account details immediately.",
+        "Notice: Unusual sign-in activity detected matching Scareware signature. Review your credentials at the portal.",
+        "System update required: Your access token expires in 24 hours (Scareware simulation payload)."
+      ]
+    }
+  }
+}

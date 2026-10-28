@@ -1,0 +1,68 @@
+
+.env
+.env.*
+extract_schema_local.py
+!.env.example
+
+
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+cmake-build-*/
+
+
+.venv/
+venv/
+ENV/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+dataset/
+trials/
+screenshot-observations/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+
+*.sqlite3
+db.sqlite3
+db.sqlite3-journal
+media/
+staticfiles/
+
+
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+Thumbs.db
+
+# Keep these commented out if you WANT your .pkl models and
+# verdict CSV on GitHub so your repo works out-of-the-box.
+# Uncomment them if you prefer users to train models locally:
+# *.pkl
+# Keep these commented out if you WANT your .pkl models on GitHub:
+# *.pkl
+*.h5
+*.keras
+pipeline_verdict_report.csv
+custom_live_test.csv
+extract_schema_local.py
