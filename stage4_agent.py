@@ -8,15 +8,12 @@ from langchain_core.messages import SystemMessage, HumanMessage
 from langchain_core.tools import tool
 from langchain.agents import create_agent
 
-# 1. Load environment variables from .env file
+# Load environment variables from .env file
 groq_api_key = os.getenv("GROQ_API_KEY")
 
-# 2. Create the chat model (temperature=0 gives more repeatable answers)
+# Create the chat model (temperature=0 gives more repeatable answers)
 llm = ChatGroq(model="openai/gpt-oss-120b", temperature=0)
 
-# =====================================================================
-# SECTION 1: LLM CAPABILITIES & LIMITATIONS
-# =====================================================================
 response = llm.invoke("In two sentences, what is a brute-force login attack?")
 print("--- Brute Force Explanation ---")
 print(response.content)
@@ -37,9 +34,6 @@ print(llm.invoke("What is the current threat-intelligence reputation of IP 203.0
 print(llm.invoke("Summarise CVE-2026-99999 and its CVSS score.").content)
 
 
-# =====================================================================
-# SECTION 2: TOOL DEFINITIONS & AGENTIC SOC TRIAGE
-# =====================================================================
 IP_REPUTATION = {
     "203.0.113.45": "malicious - Tor exit node, reported for SSH brute force",
     "198.51.100.23": "suspicious - scanning activity in the last 7 days",
@@ -61,6 +55,9 @@ SYSTEM_PROMPT = (
     "before deciding. End your answer with 'VERDICT: ESCALATE' or 'VERDICT: CLOSE' "
     "followed by a one-sentence reason."
 )
+
+
+# TO DO: Use scoped code to check IP reputation, user logins, and asset criticality. Return a structured verdict with reasoning.
 
 @tool
 def check_ip_reputation(ip_address: str) -> str:
